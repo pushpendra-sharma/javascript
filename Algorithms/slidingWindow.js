@@ -60,6 +60,7 @@ console.log(minSubArrayLen([4, 3, 3, 8, 1, 2, 3], 11)); // 2
 console.log(minSubArrayLen([1, 4, 16, 22, 5, 7, 8, 9, 10], 95)); // 0
 
 // ========================================================================
+// Time complexity O(n)   Space complexity O(n)
 function findLongestSubstring(str) {
   let longest = 0;
   let seen = {};
@@ -77,3 +78,11 @@ function findLongestSubstring(str) {
   }
   return longest;
 }
+
+console.log(findLongestSubstring('')); // 0
+console.log(findLongestSubstring('rithmschool')); // 7
+console.log(findLongestSubstring('thisisawesome')); // 6
+console.log(findLongestSubstring('thecatinthehat')); // 7
+console.log(findLongestSubstring('bbbbbb')); // 1
+console.log(findLongestSubstring('longestsubstring')); // 8
+console.log(findLongestSubstring('thisishowwedoit')); // 6
