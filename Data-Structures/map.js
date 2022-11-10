@@ -32,6 +32,9 @@ console.log(map1.size);
 // expected output: 3
 
 map1.delete('b');
+// return value
+// true if an element in the Map object existed and has been removed,
+// or false if the element does not exist.
 
 console.log(map1.size);
 // expected output: 2

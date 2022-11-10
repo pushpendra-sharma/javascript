@@ -10,6 +10,12 @@ class Customer {
     this.age = age;
   }
 
+  // class methods/properties, can't be called on instances
+  static onBoard() {
+    return 'Welcome!';
+  }
+
+  // instance methods
   getName() {
     return this.name;
   }
@@ -33,6 +39,7 @@ class Customer {
   }
 }
 
+// instance of Customer
 const cust = new Customer('Kjsbdf', 16);
 
 console.log('cust', typeof cust);
@@ -52,3 +59,5 @@ const v = cust.setState({
 console.log('updated state', cust.getState());
 
 cust.render();
+
+Customer.onBoard();
