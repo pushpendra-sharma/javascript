@@ -1,10 +1,12 @@
+// Pick element and put it in sorted portion of array
+
 // Time complexity O(n^2)    Space complexity O(1)
 function insertionSort(array) {
   for (let i = 1; i < array.length; i++) {
     let currentElement = array[i];
     let j = i - 1;
 
-    while (j >= 0 && array[j] > currentElement) {
+    while (j >= 0 && currentElement < array[j]) {
       array[j + 1] = array[j];
       j--;
     }
