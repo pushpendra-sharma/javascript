@@ -7,7 +7,10 @@ const user = {
   },
 };
 
-const ob1 = user; // shallow copy
+// shallow copy -> still refers to the same old object, 
+// if any change happens in user it is reflected in ob1
+
+const ob1 = user; 
 
 const deepCopyObject = object => {
   if (!object) return object;

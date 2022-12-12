@@ -20,5 +20,5 @@ let print1 = printFullName.bind(name1, 'New York');
 
 let print2 = printFullName.bind(name2);
 
-print1()
-print2()
+print1();
+print2();

@@ -28,13 +28,13 @@ const promis2 = new Promise((resolve, reject) => {
     reject('Reject called');
   }, 3000);
 });
-async function ciniv(){
-console.log("async")
+async function ciniv() {
+  console.log('async');
 }
-const cev=ciniv()
+const cev = ciniv();
 
 //   pending to fulfilled -> then() is executed
 //   pending to rejected -> catch() is executed
 promis2.then(handleFulfilled).catch(handleRejected);
 
-// callback -> 
+// callback ->

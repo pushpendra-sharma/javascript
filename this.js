@@ -4,8 +4,9 @@ function callback() {
 }
 const object = {
   length: 5,
-  method(callback) {
-    callback();
+  // ??
+  method(callbackFn) {
+    callbackFn();
   },
 };
 object.method(callback, 1, 2); // 4 is logged
