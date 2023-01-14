@@ -12,6 +12,7 @@ function x() {
 
 // b() // throws error
 var b = function () {
+  // anonymous fn are used in function expression, used as values
   console.log('Function expression');
 };
 
@@ -24,3 +25,19 @@ function check(param1, param2) {
 check('Argument1', 5);
 
 // first class function = fn can be passed as values or returned as values
+
+// anonymous function doesn't have their identity
+
+/*
+function (){
+  console.log('throws syntax error')
+}
+*/
+
+// named function expression
+let b = function xyz() {
+  console.log('xyz');
+};
+
+b();
+xyz(); // ReferenceError: xyz is not defined
