@@ -29,3 +29,23 @@ y();
   4
   5
   */
+
+console.log('start');
+
+setTimeout(function callback() {
+  console.log('callback');
+}, 0);
+
+console.log('end');
+
+// lines of code that take 10s to execute
+let startDate = new Date().getTime();
+let endDate = startDate;
+
+while (endDate < startDate + 10000) {
+  endDate = new Date().getTime();
+}
+
+console.log('while expires');
+
+// then the cb is actually executed after 10s
