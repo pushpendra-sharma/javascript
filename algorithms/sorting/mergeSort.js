@@ -26,7 +26,10 @@ function merge(arr1, arr2) {
   return array;
 }
 
-// Time complexity    Space complexity
+/**
+ * Time complexity
+ * Space complexity
+ */
 function mergeSort(array) {
   if (array.length <= 1) return array;
 

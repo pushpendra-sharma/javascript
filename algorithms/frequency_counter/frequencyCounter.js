@@ -1,6 +1,8 @@
-// ============================== Frequency Counter ============================
+/* ================= Frequency Counter ======================*/
 
-// Time Complexity - O(n)
+/**
+ * Time Complexity - O(n)
+ */
 function validAnagram(str1, str2) {
   if (str1.length !== str2.length) {
     return false;
@@ -30,7 +32,9 @@ validAnagram('amanaplanacanalpanama', 'acanalmanplanpamana'); // false
 validAnagram('qwerty', 'qeywrt'); // true
 validAnagram('texttwisttime', 'timetwisttext'); // true
 
-// Time Complexity - O(n)
+/**
+ * Time Complexity - O(n)
+ */
 function sameFrequency(n, m) {
   const map = new Map();
 
@@ -57,7 +61,7 @@ console.log(sameFrequency(3589578, 5879385)); // true
 console.log(sameFrequency(22, 222)); // false
 console.log(sameFrequency(22, 2)); // false showing true
 
-// Constraints: Time Complexity - O(n log n)  Space Complexity - O(1)
+/* Constraints: Time Complexity - O(n log n)  Space Complexity - O(1) */
 function areThereDuplicates(...rest) {
   let frequency = {};
 

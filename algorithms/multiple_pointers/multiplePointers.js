@@ -1,4 +1,4 @@
-// =============================== Multiple Pointers ================================
+/* ====================== Multiple Pointers ========================== */
 
 // Time Complexity - O(n)  Space Complexity - O(n)
 function countUniqueValues(nums) {
@@ -17,8 +17,6 @@ countUniqueValues([1, 1, 1, 1, 1, 2]); // 2
 countUniqueValues([1, 2, 3, 4, 4, 4, 7, 7, 12, 12, 13]); // 7
 countUniqueValues([]); // 0
 countUniqueValues([-2, -1, -1, 0, 1]); // 4
-
-// ===============================================================
 
 // Constraints: Time Complexity - O(n log n)  Space Complexity - O(1)
 function areThereDuplicates(...rest) {
@@ -39,8 +37,6 @@ console.log(areThereDuplicates(1, 2, 3, 1, 5)); // true
 console.log(areThereDuplicates(1, 2, 3)); // false
 console.log(areThereDuplicates('a', 'b', 'c', 'a')); // true
 
-// ==========================================================================
-
 // Constraints: Time Complexity - O(n)  Space Complexity - O(1)
 function averagePair(nums, avg) {
   let start = 0;
@@ -55,8 +51,6 @@ function averagePair(nums, avg) {
   return false;
 }
 console.log(averagePair([1, 3, 3, 5, 6, 7, 10, 12, 19], 8)); // true
-
-// ===========================================================================
 
 // Constraints: Time Complexity - O(n + m)  Space Complexity - O(1)
 function isSubsequence(str1, str2) {

@@ -1,5 +1,8 @@
-// using memoization
-// Time Complexity - O(n) Space Complexity - worse
+/**
+ * Memoization
+ * Time Complexity - O(n)
+ * Space Complexity - worse
+ */
 function fibonacci_memo(n, memo = [undefined, 1, 1]) {
   if (memo[n] !== undefined) return memo[n];
 

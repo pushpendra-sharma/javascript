@@ -1,7 +1,4 @@
-// leetcode https://leetcode.com/problems/roman-to-integer/
-
 var romanToInt = function (s) {
-  const romanLetters = ['I', 'V', 'X', 'L', 'C', 'D', 'M'];
   const romanValues = {
     I: 1,
     V: 5,
@@ -11,9 +8,6 @@ var romanToInt = function (s) {
     D: 500,
     M: 1000,
   };
-
-  // subtraction cases
-  // IV IX XL XC CD CM
 
   let integer = 0;
 

@@ -1,5 +1,7 @@
 // =============== Divide & Conquer ========================
 
-// Binary Search
-// Merge Sort
-// Quick Sort
+/**
+ * Binary Search
+ * Merge Sort
+ * Quick Sort
+ */

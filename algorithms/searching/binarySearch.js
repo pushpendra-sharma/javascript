@@ -1,4 +1,7 @@
-// Time complexity O(logn) Space complexity O(1)
+/**
+ * Time complexity O(logn)
+ * Space complexity O(1)
+ */
 function binarySearch(array, target) {
   let left = 0;
   let right = array.length - 1;

@@ -2,7 +2,10 @@ function swap(arr, idx1, idx2) {
   [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
 }
 
-// Time complexity O(n^2)    Space complexity O(1)
+/**
+ * Time complexity O(n^2)
+ * Space complexity O(1)
+ */
 function bubbleSort(array) {
   for (let i = array.length - 1; i >= 0; i--) {
     for (let j = 0; j < i; j++) {

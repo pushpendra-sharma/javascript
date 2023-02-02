@@ -2,12 +2,13 @@ function swap(arr, idx1, idx2) {
   [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
 }
 
-/* 
-arrange the elements less than pivot to left and grater then pivot to right
-does not create new array
-
-return the index of pivotElement
-*/
+/**
+ * arrange the elements less than pivot to left,
+ * grater then pivot to right
+ * does not create new array
+ *
+ * return the index of pivotElement
+ */
 
 function pivotFn(array, start = 0, end = array.length - 1) {
   let pivotElement = array[start];

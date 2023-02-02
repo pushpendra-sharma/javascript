@@ -1,4 +1,4 @@
-// using recursion O(n) ,recursion = slow
+// using recursion(slow) O(n)
 function factorialByRecursion(n) {
   if (n < 2) return 1;
   else return n * factorialByRecursion(n - 1);
