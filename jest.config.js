@@ -1,0 +1,28 @@
+module.exports = {
+  // Indicates whether the coverage information should be collected while executing the test
+  collectCoverage: true,
+
+  // The directory where Jest should output its coverage files.
+  coverageDirectory: './coverage/',
+
+  // If the test path matches any of the patterns, it will be skipped.
+  testPathIgnorePatterns: ['<rootDir>/node_modules/'],
+
+  // If the file path matches any of the patterns, coverage information will be skipped.
+  coveragePathIgnorePatterns: ['<rootDir>/node_modules/'],
+
+  collectCoverageFrom: ['src/**/**', '!**/node_modules/**'],
+
+  coverageReporters: ['json', 'text', 'lcov', 'clover'],
+  // The pattern Jest uses to detect test files.
+  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.jsx?$',
+
+  coverageThreshold: {
+    global: {
+      statements: 90,
+      branches: 90,
+      functions: 90,
+      lines: 90,
+    },
+  },
+};
