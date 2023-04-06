@@ -43,10 +43,18 @@
       </label>
     </ul>
 
-    <div id="grandparent">
-      <div id="parent"><div id="child">child</div></div>
-    </div>
+    <section class="event-section">
+      <h2>Event bubbling & capturing(trcikling)</h2>
+      <div id="grandparent">
+        grandparent
+        <div id="parent">
+          parent
+          <div id="child">child</div>
+        </div>
+      </div>
+    </section>
 
     <script src="index.js"></script>
+    <script src="./src/concepts/eventListner.js"></script>
   </body>
 </html>

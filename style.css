@@ -1,6 +1,28 @@
-div {
-  min-height: 100px;
-  min-width: 100px;
-  border: 1px solid black;
-  padding: 20px;
+.event-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+#grandparent {
+  border: 2px solid black;
+  height: 12rem;
+  width: 12rem;
+  padding: 2rem;
+  margin: auto;
+}
+
+#parent {
+  border: 2px solid crimson;
+  height: 8rem;
+  width: 8rem;
+  padding: 2rem;
+  margin: auto;
+}
+
+#child {
+  border: 2px solid darkcyan;
+  height: 4rem;
+  width: 4rem;
+  padding: 2rem;
+  margin: auto;
 }
