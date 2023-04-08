@@ -1,8 +1,10 @@
 /**
  * @param {number} n
  * @returns {number}
+ * 
+ * Time Complexity - O(n)
+ * Space Complexity - O(1)
  */
-/** Time Complexity - O(n)  Space Complexity - O(1) */
 export function factorialByRecursion(n) {
   if (n < 2) return 1;
   else return n * factorialByRecursion(n - 1);
@@ -11,8 +13,10 @@ export function factorialByRecursion(n) {
 /**
  * @param {number} n
  * @returns {number}
- */
-/** Time Complexity - O(n)  Space Complexity - O(1) */
+ * 
+ * Time Complexity - O(n) 
+ * Space Complexity - O(1) 
+*/
 export function factorialByIteration(n) {
   if (n < 1) return 1;
 
