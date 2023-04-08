@@ -1,6 +1,11 @@
-// Time complexity O(n^2) Space complexity O(1)
-
-function naiveStringSearch(long, short) {
+/**
+ * @param {string} long
+ * @param {string} short
+ * @returns {number}
+ *
+ * Time complexity O(n^2) Space complexity O(1)
+ */
+export function naiveStringSearch(long, short) {
   let count = 0;
   for (let i = 0; i < long.length; i++) {
     for (let j = 0; j < short.length; j++) {
@@ -14,5 +19,3 @@ function naiveStringSearch(long, short) {
   }
   return count;
 }
-
-naiveStringSearch('lorie loled', 'lol');
