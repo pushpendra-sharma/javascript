@@ -1,22 +1,23 @@
 const calc = n => (n * (n + 1)) / 2;
 
-const memoizedFunc = fun => {
-  let cache = {};
+/**
+ * @param {Function} fn
+ */
+export function memoizedFunc(fn) {
+  const cache = {};
 
   return function (...args) {
-    // console.log(args);
+    const key = JSON.stringify(args);
 
-    let num = args[0];
-    if (num in cache) {
-      console.log(cache);
-      return cache[num];
+    if (key in cache) {
+      return cache[key];
     } else {
-      let result = fun(num);
-      cache[num] = result;
+      const result = fn(...args);
+      cache[key] = result;
       return result;
     }
   };
-};
+}
 
 console.time();
 const effFunc = memoizedFunc(calc);
