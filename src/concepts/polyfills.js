@@ -11,3 +11,19 @@ const myArray = ['Bot', 'Angle', 'Mc', 'Elon'];
 
 let output = myArray.myMap(item => item.length);
 let output2 = myArray.map((item, index) => ({ index: item.length }));
+
+Array.prototype.myFilter = function (x) {
+  const newArray = [];
+
+  for (let i = 0; i < this.length; i++) {
+    if (x(this[i], i, this)) {
+      newArray.push(this[i]);
+    }
+  }
+
+  return newArray;
+};
+
+let filteredOutput = myArray.myFilter(item => item.length > 3);
+filteredOutput;
+
