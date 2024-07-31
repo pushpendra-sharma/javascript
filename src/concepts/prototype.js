@@ -23,3 +23,10 @@ let obj2 = {
 // this will set ptrotype of obj2 to object1
 obj2.__proto__ = object1;
 
+// behavior delegation
+const foo = { a: 42 };
+const bar = Object.create(foo);
+
+bar.b = 'hello world';
+
+console.log(bar.a);

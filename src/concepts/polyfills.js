@@ -25,5 +25,19 @@ Array.prototype.myFilter = function (x) {
 };
 
 let filteredOutput = myArray.myFilter(item => item.length > 3);
-filteredOutput;
 
+Array.prototype.myReduce = function (callback, initialValue) {
+  let returnValue;
+  // initialValue can be anything, 0, NaN, null
+
+  if (initialValue !== undefined) returnValue = initialValue;
+  let currentValue = initialValue;
+  let nextValue = initialValue;
+
+  return returnValue;
+};
+
+// "old"
+isNaN();
+// preffered
+Number.isNaN();
