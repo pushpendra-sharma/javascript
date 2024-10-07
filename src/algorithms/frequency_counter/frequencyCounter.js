@@ -52,13 +52,11 @@ export function areThereDuplicates(...rest) {
   let frequency = {};
 
   for (const item of rest) {
-    if (frequency[item]) {
-      return true;
-    } else {
-      frequency[item] = (frequency[item] || 0) + 1;
-    }
+    // if frequency already > 0 then means duplicate, directly return true
+    if (frequency[item]) return true;
+    // else increment frequency
+    else frequency[item] = (frequency[item] || 0) + 1;
   }
 
   return false;
 }
-
