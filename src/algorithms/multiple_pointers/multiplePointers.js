@@ -1,16 +1,24 @@
 /* ====================== Multiple Pointers ========================== */
 
+/**
+ * Write a function that accepts a sorted array of integers and counts the uniques values in the array.
+ * Can also do by frequency pattern.
+ */
 // Time Complexity - O(n)  Space Complexity - O(n)
 export function countUniqueValues(nums) {
-  if (nums.length < 2) {
-    return nums.length;
+  if (nums.length < 2) return nums.length;
+
+  let pointer1 = 0;
+  let pointer2 = 1;
+  while (pointer2 < nums.length) {
+    if (nums[pointer2] === nums[pointer1]) {
+      pointer2 = pointer2 + 1;
+    } else {
+      pointer1 = pointer1 + 1;
+      nums[pointer1] = nums[pointer2];
+    }
   }
-  let i = 0;
-  let j = 1;
-  while (j < nums.length) {
-    nums[j] === nums[i] ? j++ : (nums[++i] = nums[j]);
-  }
-  return i + 1;
+  return pointer1 + 1;
 }
 
 // Constraints: Time Complexity - O(n log n)  Space Complexity - O(1)
