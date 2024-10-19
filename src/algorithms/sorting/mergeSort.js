@@ -1,3 +1,7 @@
+/** To merge 2 sorted arrays
+ * Time ecomplexity O(n+m)
+ * Space ecomplexity O(n+m)
+ */
 function merge(arr1, arr2) {
   const array = [];
   let i = 0;
@@ -27,8 +31,8 @@ function merge(arr1, arr2) {
 }
 
 /**
- * Time complexity
- * Space complexity
+ * Time complexity O(nlogn)
+ * Space complexity O(n)
  */
 function mergeSort(array) {
   if (array.length <= 1) return array;
