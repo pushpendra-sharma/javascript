@@ -1,6 +1,6 @@
 {
   "name": "javascript",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Learn Data Structures & Algorithms in JavaScript.",
   "main": "index.js",
   "scripts": {
@@ -8,18 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pushpendra-Sharma/javascript.git"
+    "url": "git+https://github.com/pushpendra-sharma/javascript.git"
   },
   "author": "Pushpendra Sharma",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Pushpendra-Sharma/javascript/issues"
+    "url": "https://github.com/pushpendra-sharma/javascript/issues"
   },
-  "homepage": "https://github.com/Pushpendra-Sharma/javascript#readme",
+  "homepage": "https://github.com/pushpendra-sharma/javascript#readme",
   "devDependencies": {
-    "@babel/core": "^7.25.2",
-    "@babel/preset-env": "^7.25.4",
-    "babel-jest": "^29.7.0",
-    "jest": "^29.7.0"
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "babel-jest": "^30.0.0",
+    "jest": "^30.0.0"
   }
 }
