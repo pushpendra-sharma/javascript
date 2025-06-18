@@ -1,4 +1,4 @@
-var romanToInt = function (s) {
+export function romanToInt(s) {
   const romanValues = {
     I: 1,
     V: 5,
@@ -24,12 +24,4 @@ var romanToInt = function (s) {
     }
   }
   return integer;
-};
-
-console.log('Expected: 1,    Actual:', romanToInt('I'));
-console.log('Expected: 9,    Actual:', romanToInt('IX'));
-console.log('Expected: 46,   Actual:', romanToInt('XLVI'));
-console.log('Expected: 15,   Actual:', romanToInt('XV'));
-console.log('Expected: 76,   Actual:', romanToInt('LXXVI'));
-console.log('Expected: 97,   Actual:', romanToInt('XCVII'));
-console.log('Expected: 492,  Actual:', romanToInt('CDXCII'));
+}
