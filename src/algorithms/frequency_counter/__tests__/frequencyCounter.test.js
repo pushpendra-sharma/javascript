@@ -22,6 +22,7 @@ describe('frequencyCounter', () => {
     expect(sameFrequency(3589578, 5879385)).toBeTruthy();
     expect(sameFrequency(22, 222)).toBeFalsy();
     expect(sameFrequency(22, 2)).toBeFalsy();
+    expect(sameFrequency(123, 12)).toBeFalsy();
   });
 
   it('should return true if there are duplicate characters', () => {

@@ -44,6 +44,10 @@ export function sameFrequency(n, m) {
     m = Math.floor(m / 10);
   }
 
+  for (const count of map.values()) {
+    if (count !== 0) return false;
+  }
+
   return true;
 }
 
