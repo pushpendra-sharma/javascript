@@ -41,3 +41,21 @@ const arr = [1, , 3, 4]; // Sparse array (index 1 is missing)
 const filtered = arr.myFilter(num => num > 2);
 
 console.log(filtered);
+
+if (!Array.prototype.myMap) {
+  Array.prototype.myMap = function (callback, thisArg) {
+    if (typeof callback !== 'function') {
+      throw new TypeError(`${callback} is not a function`);
+    }
+
+    const result = [];
+    for (let i = 0; i < this.length; i++) {
+      if (i in this) {
+        // for handling array like [1,,,,3] with no valid item at some indices
+        const x = callback.call(thisArg, this[i], i, this);
+        result[i] = x;
+      }
+    }
+    return result;
+  };
+}
